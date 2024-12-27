@@ -16,7 +16,7 @@ droneSignal = data(rangebin,:,:);
 [droneSpectrum, f] = computeSpectrum(droneSignal, fs);
 
 
-fig = figure('Units','inches','Position',[0, 0, 3.5, 2.5]);
+fig = figure('Units','inches','Position',[0, 0, 3.5, 2.0]);
 plot(f, droneSpectrum, 'LineWidth', 2);
 xlabel('Frequency [Hz]','FontSize',9);
 ylabel('Intensity [V^2]','FontSize',9);
